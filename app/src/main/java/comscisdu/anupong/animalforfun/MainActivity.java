@@ -3,10 +3,12 @@ package comscisdu.anupong.animalforfun;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,5 +43,11 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-    }
-}
+    }// end ของ method onCreate()
+
+    public void clickFB(View view) {
+        Intent fbIntent = new Intent(Intent.ACTION_VIEW);
+        fbIntent.setData(Uri.parse("https://www.facebook.com/YooNai-%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%99-102397194560729"));
+        startActivity(fbIntent);
+    }// end ของ method clickFB()
+}// end class

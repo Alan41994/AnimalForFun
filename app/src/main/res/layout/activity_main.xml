@@ -39,7 +39,6 @@
         android:textSize="@dimen/h2"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/edtName"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
